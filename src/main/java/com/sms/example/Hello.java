@@ -1,5 +1,4 @@
 /*test commit*/
-/**/
 
 package com.sms.example;
 
