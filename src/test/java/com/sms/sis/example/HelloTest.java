@@ -55,6 +55,7 @@ public class HelloTest implements InstanceTestClassListener{
         assertEquals("Boudy Description", result.getValue(0, SC_PROVIDERS.DESCRIPTION));
     }
     
+    
 
 	@Override
 	public void beforeClassSetup() {
