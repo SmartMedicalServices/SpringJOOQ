@@ -16,7 +16,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>properties-maven-plugin</artifactId>
-				<version>RELEASE</version>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
 						<phase>initialize</phase>
@@ -74,6 +74,14 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<version>3.4.1</version>
+				<configuration>
+					<propertyFile>src/main/resources/liquibase.properties</propertyFile>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -181,6 +189,12 @@
 			<version>RELEASE</version>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<!-- Liquibase -->
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>3.4.1</version>
 		</dependency>
 	</dependencies>
 </project>
